@@ -75,6 +75,11 @@ fare_amount - float dollar amount of the cost of the taxi ride.
 # Data Cleaning and Preprocessing 
 
 
+I have filtered out some columns based on the real time scenario such as distance less than 100 KMS between pickup and drop_off. fare amount greater that 2.5 $ and pickup coordinates are not within NYC(-73.9, 40.7)
+
+Columns in my dataset and their data types
+
+![image](https://github.com/Susrinivas/Susrinivas_data606/assets/79036336/94b22a1c-e010-42d5-ae73-c3e6d9c9f962)
 
 
 
