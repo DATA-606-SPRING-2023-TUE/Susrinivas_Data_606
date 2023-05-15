@@ -82,6 +82,17 @@ Columns in my dataset and their data types
 ![image](https://github.com/Susrinivas/Susrinivas_data606/assets/79036336/94b22a1c-e010-42d5-ae73-c3e6d9c9f962)
 
 
+We have calculated distance between pickup and dropoff locations using haversine formula
+
+The Haversine formula calculates the shortest distance between two points on a sphere using their latitudes and longitudes measured along the surface. It is important for use in navigation.
+
+![image](https://github.com/Susrinivas/Susrinivas_data606/assets/79036336/aa79ed59-3ecc-42ee-9dfd-35b156a328c7)
+
+where r is the radius of the earth(6371 km), d is the distance between two points,  φ1,  φ2     is the latitude of the two points, and λ1, λ2 is the longitude of the two points respectively.
+
+This formula assumes that the Earth is a perfect sphere where in-fact it is an oblate spheroid.
+
+![image](https://github.com/Susrinivas/Susrinivas_data606/assets/79036336/0a4c69ca-24de-43db-bc8c-0e2980ee20c5)
 
 
 
@@ -91,9 +102,11 @@ Columns in my dataset and their data types
 
 ![image](https://github.com/Susrinivas/Susrinivas_data606/assets/79036336/5d002a85-64e2-4993-af3f-5b7329de66f9)
 
+From the above grapgh it is observed that number of rides are more when the fare amount is less than $20.it indicates that number of rides are more for short distances.
 
 ![image](https://github.com/Susrinivas/Susrinivas_data606/assets/79036336/777c9343-386f-4250-919e-efb55fdc2f85)
 
+From the graph above, it can be seen that most cab passengers are single.
 
 ![image](https://github.com/Susrinivas/Susrinivas_data606/assets/79036336/f2973324-8bdf-4258-8245-e2ea231231da)
 
@@ -107,42 +120,23 @@ From the above plot it is obsereved that Taxi fare has 3 peaks in a day,i.e from
 
 ![image](https://github.com/Susrinivas/Susrinivas_data606/assets/79036336/0d5d5068-17cc-48a6-ace1-2986f9a18331)
 
-
+above scatter plot gives the relationship between distance and fare amount.from the above graph we can say that distance and taxi fare directly proportional to each other,as the distance increases fare amount is also increasing. 
 
 
 # Prediction and Comparision of models
 
 Machine Learning models used in this project are regression models as the fare price is continuous variable.
 
-1.Linear regression: 
+1.Linear regression: Linear regression is a statistical technique used to model the relationship between a dependent variable and one or more independent variables. It assumes a linear relationship between the variables, meaning that the relationship can be represented by a straight line.
 
+2.Decision tree Regression:In decision tree regression, the algorithm builds a tree-like model by recursively partitioning the data based on the values of the independent variables. Each internal node of the tree represents a decision rule or a split point, and each leaf node represents a predicted value.
 
-  
- 
- 
-  
-  2.Decision tree Regression
+3.Random Forest:Random Forest is a popular machine learning algorithm that combines the principles of decision trees and ensemble learning. It is used for both classification and regression tasks.
+A random forest consists of a collection of individual decision trees, where each tree is trained on a random subset of the data and a random subset of the features. 
 
+4.Light Gradient Boosting Machine:Gradient boosting is a machine learning technique that builds an ensemble of weak prediction models, typically decision trees, in a sequential manner. The idea is to iteratively add new models to the ensemble, with each new model attempting to correct the mistakes made by the previous models. Gradient boosting algorithms use gradient descent optimization to minimize a loss function
 
-  
- 
- 
-  
-  Random Forest
-
-
-  
- 
- 
-  
-  Light Gradient Boosting Machine
-
-
-  
- 
- 
-  
-  Gradient Boosting Regressor
+5.Gradient Boosting Regressor:In Gradient Boosting Regressor, the algorithm starts by initializing the model with a constant prediction value, typically the mean of the target variable. It then sequentially adds new decision trees to the ensemble, with each tree being a weak learner. Each new tree is trained to minimize the residual errors between the predicted values and the actual values of the target variable.
 
 
 # Comparison of models
@@ -151,14 +145,22 @@ Comparing machine learning models by considering root mean square error as evalu
 
 ![image](https://github.com/Susrinivas/Susrinivas_data606/assets/79036336/3eac0b3a-fe03-42e8-8834-2f10ca24e444)
 
+From the above RMSE values of different regression models,it is observed that Gradient boosting regressor has less RMSE value compared to other models.it indicates that Gradient boosting Regressor is the best model for predicting the taxi fare.
+
 # Prediction
+
+Below table shows the predicted values of new york taxi fare using gradient boosting regressor.
 
 ![image](https://github.com/Susrinivas/Susrinivas_data606/assets/79036336/44fdcd43-32d2-4005-b45a-b878e492900e)
 
 
 # Conclusion
 
-Based on the above used models, Gradient boosting regressor is the best model to predict taxi fare based on demand and predicted taxi fares for the test dataset
+Calculated the distance between pick-up and drop-off locations using Haversine Formula
+
+Gradient boosting regressor is the best model compared to other regression models.
+
+Predicted the New York Taxi Fare using Gradient boosting regressor.
 
 
 
