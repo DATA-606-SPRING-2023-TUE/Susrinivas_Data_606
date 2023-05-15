@@ -145,25 +145,21 @@ Machine Learning models used in this project are regression models as the fare p
   Gradient Boosting Regressor
 
 
-## Comparison of models
+# Comparison of models
 
 Comparing machine learning models by considering root mean square error as evaluation metric, model with least RMSE will be the best model to predict the taxi fares.
 
 ![image](https://github.com/Susrinivas/Susrinivas_data606/assets/79036336/3eac0b3a-fe03-42e8-8834-2f10ca24e444)
 
-## Prediction
+# Prediction
 
 ![image](https://github.com/Susrinivas/Susrinivas_data606/assets/79036336/44fdcd43-32d2-4005-b45a-b878e492900e)
 
 
-## Conclusion
+# Conclusion
 
 Based on the above used models, Gradient boosting regressor is the best model to predict taxi fare based on demand and predicted taxi fares for the test dataset
 
 
 
   
- 
-
-
-# Conclusion
