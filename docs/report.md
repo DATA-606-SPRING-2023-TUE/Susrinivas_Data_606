@@ -3,7 +3,7 @@
 
 #### ppt link:https://github.com/Susrinivas/Susrinivas_data606/blob/main/docs/Capstone.pptx
 
-#### you tube video link:
+#### you tube video link: https://youtu.be/xBRU1dDmtmA
 
 # Contents
 
